@@ -1,6 +1,6 @@
 {
   "name": "react-native-image-gallery-simple",
-  "version": "2.1.6",
+  "version": "2.1.7",
   "description": "Pure JavaScript image gallery component for iOS and Android",
   "main": "src/Gallery.js",
   "scripts": {
@@ -20,6 +20,7 @@
     "access": "public"
   },
   "dependencies": {
+    "deprecated-react-native-prop-types": "^5.0.0",
     "prop-types": "^15.6.0",
     "react-mixin": "^3.0.5",
     "react-timer-mixin": "^0.13.3"

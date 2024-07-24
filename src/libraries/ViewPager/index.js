@@ -5,6 +5,7 @@ import {
     InteractionManager,
     Dimensions
 } from 'react-native';
+import { ViewPropTypes } from 'deprecated-react-native-prop-types';
 import PropTypes from 'prop-types';
 import Scroller from '../Scroller';
 import { createResponder } from '../GestureResponder';
@@ -17,9 +18,10 @@ const { width, height } = Dimensions.get('window');
 
 export default class ViewPager extends PureComponent {
     static propTypes = {
+        ...View.propTypes,
         initialPage: PropTypes.number,
         pageMargin: PropTypes.number,
-        // scrollViewStyle: View.propTypes.style,
+        scrollViewStyle: ViewPropTypes ? ViewPropTypes.style : View.propTypes.style,
         scrollEnabled: PropTypes.bool,
         renderPage: PropTypes.func,
         pageDataArray: PropTypes.array,

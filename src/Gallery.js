@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import { View } from 'react-native';
+import { ViewPropTypes } from 'deprecated-react-native-prop-types';
 import PropTypes from 'prop-types';
 import { createResponder } from './libraries/GestureResponder';
 import TransformableImage from './libraries/TransformableImage';
@@ -11,9 +12,10 @@ const DEFAULT_FLAT_LIST_PROPS = {
 
 export default class Gallery extends PureComponent {
     static propTypes = {
+        ...View.propTypes,
         images: PropTypes.arrayOf(PropTypes.object),
         initialPage: PropTypes.number,
-        // scrollViewStyle: View.propTypes.style,
+        scrollViewStyle: ViewPropTypes ? ViewPropTypes.style : View.propTypes.style,
         pageMargin: PropTypes.number,
         onPageSelected: PropTypes.func,
         onPageScrollStateChanged: PropTypes.func,
