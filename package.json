@@ -1,6 +1,6 @@
 {
-  "name": "@georchina/react-native-image-gallery",
-  "version": "2.1.5",
+  "name": "react-native-image-gallery-simple",
+  "version": "2.1.6",
   "description": "Pure JavaScript image gallery component for iOS and Android",
   "main": "src/Gallery.js",
   "scripts": {
@@ -16,6 +16,9 @@
     "url": "https://github.com/georchina/react-native-image-gallery/issues"
   },
   "homepage": "https://github.com/georchina/react-native-image-gallery#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "prop-types": "^15.6.0",
     "react-mixin": "^3.0.5",

@@ -11,10 +11,9 @@ const DEFAULT_FLAT_LIST_PROPS = {
 
 export default class Gallery extends PureComponent {
     static propTypes = {
-        ...View.propTypes,
         images: PropTypes.arrayOf(PropTypes.object),
         initialPage: PropTypes.number,
-        scrollViewStyle: View.propTypes.style,
+        // scrollViewStyle: View.propTypes.style,
         pageMargin: PropTypes.number,
         onPageSelected: PropTypes.func,
         onPageScrollStateChanged: PropTypes.func,

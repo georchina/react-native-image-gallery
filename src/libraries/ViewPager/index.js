@@ -17,10 +17,9 @@ const { width, height } = Dimensions.get('window');
 
 export default class ViewPager extends PureComponent {
     static propTypes = {
-        ...View.propTypes,
         initialPage: PropTypes.number,
         pageMargin: PropTypes.number,
-        scrollViewStyle: View.propTypes.style,
+        // scrollViewStyle: View.propTypes.style,
         scrollEnabled: PropTypes.bool,
         renderPage: PropTypes.func,
         pageDataArray: PropTypes.array,

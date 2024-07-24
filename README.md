@@ -1,8 +1,8 @@
-# react-native-image-gallery
+# react-native-image-gallery-simple
 
 ## Table of contents
 
-- [react-native-image-gallery](#react-native-image-gallery)
+- [react-native-image-gallery-simple](#react-native-image-gallery-simple)
     - [Table of contents](#table-of-contents)
     - [Install](#install)
     - [Usage example](#usage-example)
@@ -25,16 +25,16 @@ This component works on react-native **0.44+**.
 
 You can try this example live in **Archriss' showcase app** on [Android](https://play.google.com/store/apps/details?id=fr.archriss.demo.app) and [iOS](https://itunes.apple.com/lu/app/archriss-presentation-mobile/id1180954376?mt=8) or check out the demo.
 
-![react-native-image-gallery](https://media.giphy.com/media/3o7bugPvJyqYWz9bK8/giphy.gif)
+![react-native-image-gallery-simple](https://media.giphy.com/media/3o7bugPvJyqYWz9bK8/giphy.gif)
 
 ## Install
 
-`npm install --save react-native-image-gallery` or `yarn add react-native-image-gallery`
+`npm install --save react-native-image-gallery-simple` or `yarn add react-native-image-gallery-simple`
 
 ## Usage example
 
 ```javascript
-import Gallery from 'react-native-image-gallery';
+import Gallery from 'react-native-image-gallery-simple';
 
   render() {
     return (
